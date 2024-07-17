@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Paint</title>
 </head>
 <body>
-    
+    <main>
+        <canvas width="1000" height="700">Erro: seu navegador não suporta essa tecnologia :/</canvas>
+
+        <section class="tool-box">
+            <button data-brush>
+                <span class="material-symbols-outlined">format_paint</span>
+            </button>
+
+            <button data-eraser>
+                <span class="material-symbols-outlined">ink_eraser</span>
+            </button>
+
+            <button data-color>
+                <input type="color" class="color">
+            </button>
+
+            <button data-clean>
+                <span class="material-symbols-outlined">delete</span>
+            </button>
+        </section>
+
+        <section class="tool-box">
+            <button data-size=0></button>
+            <button data-size=1></button>
+            <button data-size=2></button>
+        </section>
+    </main>
 </body>
 </html>
