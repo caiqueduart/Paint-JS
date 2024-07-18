@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: #EDEDED;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+}
+
+.canvas {
+    align-self: end;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.15);
+}
+
+.tool-box {
+    align-self: start;
+    background-color: #E1E1E1;
+    min-width: 808px;
+    min-height: 104px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.tool-button {
+    display: grid;
+    place-items: center;
+    background-color: #EDEDED;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.15);
+}
+
+.tool-button span {
+    color: #404040;
+    font-size: 2rem;
+}
+
+.tool-button:hover, .tool-button-color:hover {
+    background-color: #f5f5f5;
+    border: 3px dashed #636363;
+}
+
+.tool-button div {
+    background-color: #404040;
+    border-radius: 100px;
+}
+
+.size-0 {
+    width: 50px;
+    height: 50px;
+}
+
+.size-1 {
+    width: 30px;
+    height: 30px;
+}
+
+.size-2 {
+    width: 20px;
+    height: 20px;
+}
+
+.size-3 {
+    width: 10px;
+    height: 10px;
+}
+
+.tool-button-color {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.15);
+    background-color: #f5f5f5;
+}
+
+.color {
+    width: 70px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.color::-webkit-color-swatch {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
