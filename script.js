@@ -46,7 +46,7 @@ Função para detectar se o usuário está movendo o mouse,
 para garantir que a pintura continue nas coordenadas
 em que o cursor se encontra, (chamadas seguidas a função draw()).
 */
-canvas.addEventListener("mousemove", (event) => {
+document.addEventListener("mousemove", (event) => {
     const {clientX, clientY} = event;
     if(isPainting && tool == "brush") {
         draw(clientX, clientY);
@@ -62,10 +62,21 @@ canvas.addEventListener("mousemove", (event) => {
 })
 
 /*
+Função para evitar que o usuário precise passar o mouse sobre a área
+da tag canva para limpa-la.
+*/
+document.addEventListener("mouseup", (event) => {
+    console.log(tool);
+    if(tool == "clear") {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+})
+
+/*
 Função para detectar se o usuário tirou o dedo do mouse, mudando assim o estado
 do isPainting para false.
 */
-canvas.addEventListener("mouseup", () => {
+document.addEventListener("mouseup", () => {
     isPainting = false;
 })
 
