@@ -15,8 +15,8 @@ para serem usandas nas arrow functions.
 */
 let brushSize = 20;
 let isPainting = false;
-let tool = "brush"
-
+let tool = "brush";
+ctx.fillStyle = "#00FF00";
 /*
 Função que é acionada quando o usuário mudar a cor no paint, certificando
 que aqui também seja alterada.
@@ -37,7 +37,7 @@ canvas.addEventListener("mousedown", ({clientX, clientY}) => {
     }
 
     if(tool == "eraser") {
-        eraser(clientX, clientY)
+        eraser(clientX, clientY);
     }
 })
 
@@ -141,8 +141,8 @@ selectTool() ou selectSize(), para determinar qual a ferramenta ou qual tamanho 
 */
 tools.forEach((tool) => {
     tool.addEventListener("click", selectTool);
-})
+});
 
 sizeButtons.forEach((button) => {
     button.addEventListener("click", selectSize);
-})
+});

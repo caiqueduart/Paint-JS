@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Paint</title>
+    <title>Paint-JS</title>
 </head>
 <body>
     <main class="content">
@@ -22,12 +23,12 @@
                 <span class="material-symbols-outlined">delete</span>
             </button>
             <button class="tool-button-color" data-color>
-                <input type="color" class="color">
+                <input class="color" type="color" value="#00FF00">
             </button>
-            <button class="tool-button button-size" data-size=50><div class="size-0"></div></button>
-            <button class="tool-button button-size" data-size=30><div class="size-1"></div></button>
-            <button class="tool-button button-size active" data-size=20><div class="size-2"></div></button>
-            <button class="tool-button button-size" data-size=10><div class="size-3"></div></button>
+            <button class="button-size" data-size=50><div class="size-0"></div></button>
+            <button class="button-size" data-size=30><div class="size-1"></div></button>
+            <button class="button-size active" data-size=20><div class="size-2"></div></button>
+            <button class="button-size" data-size=10><div class="size-3"></div></button>
         </section>
     </main>
     <script src="script.js"></script>
