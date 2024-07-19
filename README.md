@@ -4,4 +4,4 @@ O Paint-JS é uma plicação web para desenho inspirado no software Paint da Mic
 apagar partes do desenho usando uma borracha, ou limpar toda a área de pintura. 
 
 A aplicação disponibiliza duas ferramentas, uma borracha e um pincel. Utiliza principalmente Orientação a Objetos, manipulando o DOM, e Condicionais. 
-Estou utilizando também uma linguagem de marcação e uma de estilos para apoio além do JavaScript, o HTML e CSS, respectivamente.
+Estou utilizando também uma linguagem de marcação e uma de estilos para apoio além do JavaScript, o HTML e o CSS, respectivamente.
