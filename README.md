@@ -8,4 +8,4 @@ Estou utilizando também uma linguagem de marcação e uma de estilos para apoio
 
 **OBS: A aplicação não está funcional em dispositivos mobile, apenas em desktops.**
 
->> https://caiqueduart.github.io/Paint-JS/
+TESTE AQUI: <https://caiqueduart.github.io/Paint-JS/>
